@@ -1,0 +1,37 @@
+*{
+    background-color: whitesmoke !important;
+}
+#container{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    /* gap: 5rem ; */
+}
+.card{
+    /* display: grid !important; */
+    /* grid-template-columns:repeat(3,1fr) !important; */
+    gap: 5rem;
+    border: 5px solid greenyellow;
+}
+#id{
+    text-align: center;
+}
+.noorul{
+    border:2px solid green;
+    gap: 5rem;
+}
+#ameen{
+    display: inline-grid;
+  
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+}
+.name{
+  background-color: aqua;
+    text-align: center;
+}
+#dia{
+    background-color: aqua;
+    border: 2px solid blue;
+    
+}
