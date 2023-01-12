@@ -24,8 +24,6 @@ fetch("https://isro.vercel.app/api/centres")
 
  var box = document.createElement("div")
  box.setAttribute("class", "box")
-   
-   
   box.innerHTML += 
   
     ` <div class="inbox">
