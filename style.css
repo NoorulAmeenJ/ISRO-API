@@ -6,9 +6,7 @@
      display: inline-block;
      box-shadow: 2px 2px 2px 2px rgb(127, 200, 17);
      width: 10rem ;
-     height: auto;
-    
-     
+     height: auto; 
 }
 h1{
     text-align: center;
