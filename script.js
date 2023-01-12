@@ -14,22 +14,44 @@
 //   // console.log(`${data.flag} ${data.population} ${data.region} ${data.capital}`)
 //   })
 // })
- fetch("https://isro.vercel.app/api/centres")
+var container = document.getElementById("container")
+// console.log(container)
+fetch("https://isro.vercel.app/api/centres")
 .then((response)=>response.json())
 .then((data)=>{ 
+  // data.map( (event) => {
     for(var i=0; i<data.centres.length; i++){
+
+ var box = document.createElement("div")
+ box.setAttribute("class", "box")
    
-    document.body.innerHTML +=
+   
+  box.innerHTML += 
+  
+    ` <div class="inbox">
+     <div><span></span>${data.centres[i].id}</div> 
+    <div><span>Name :</span> ${data.centres[i].name}</div>
+    <div><span>Location :</span> ${data.centres[i].Place}</div>
+    <div><span>State :</span>${data.centres[i].State}</div>
+      </div>
     `
-    
-    `
+     
+      container.append(box)
+      // console.log(box)
     }
+    
   })
 
+  // div class="box">
+  // <div></div>
+  // <div>place</div>
+  // <div>id</div>
+// </div>
+  
 
-//   data.centres[i].name
-// data.centres[i].Place
-// data.centres[i].State
+//   
+//
+// 
 // data.centres[i].id
 
 {/* <div class="card" style="width: 18rem;">
@@ -40,3 +62,8 @@
       <p class="card-text">${data.centres[i].State}</p>
     </div>
   </div> */}
+
+  
+  // var bz =div.setAttribute("class", "box")
+  // console.log(box)
+  

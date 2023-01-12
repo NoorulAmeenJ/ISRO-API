@@ -1,37 +1,46 @@
-*{
-    background-color: whitesmoke !important;
+
+.box{
+    /* border: 2px solid blue; */
+     margin: 3rem 0 3rem 3rem;
+     border-radius: 1rem;
+     display: inline-block;
+     box-shadow: 2px 2px 2px 2px rgb(127, 200, 17);
+     width: 10rem ;
+     height: auto;
+    
+     
+}
+h1{
+    text-align: center;
 }
 #container{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    /* gap: 5rem ; */
-}
-.card{
-    /* display: grid !important; */
-    /* grid-template-columns:repeat(3,1fr) !important; */
-    gap: 5rem;
-    border: 5px solid greenyellow;
-}
-#id{
-    text-align: center;
-}
-.noorul{
-    border:2px solid green;
-    gap: 5rem;
-}
-#ameen{
-    display: inline-grid;
-  
-    gap: 5rem;
-    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-}
-.name{
-  background-color: aqua;
-    text-align: center;
-}
-#dia{
-    background-color: aqua;
-    border: 2px solid blue;
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-items: center;
     
+ 
+    
+}
+.inbox{
+    display: flex;
+    flex-direction: column; 
+    justify-content : center;
+    border-radius: 1rem;
+    align-items: center;
+    color: white;
+    background-color: black  ; 
+    /* height: stretch; */
+    font-size: larger;
+    padding : 1rem 0 1rem 0;
+   
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.inbox:hover{
+    background-color: greenyellow;
+    color: black
 }
